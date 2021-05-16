@@ -34,6 +34,15 @@ public class Book {
         return title;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
+    @Nullable
+    public String getYearPublished() {
+        return yearPublished;
+    }
+
     public Book(String title, String author) {
         this.title = title;
         this.author = author;
