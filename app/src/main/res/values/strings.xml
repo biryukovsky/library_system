@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Библиотека</string>
+
+    <string name="create_book_title">Добавить книгу</string>
+    <string name="create_book_form_button_text">Добавить</string>
+    <string name="create_book_form_book_title">Название</string>
+    <string name="create_book_form_book_author">Автор</string>
+    <string name="create_book_form_book_year_published">Год издания</string>
+</resources>
