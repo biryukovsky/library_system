@@ -10,16 +10,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.biryukovsky.library_system.data.entities.Book;
 
 public class BookViewHolder extends RecyclerView.ViewHolder {
-    private final TextView bookItemView;
+    private final TextView bookItemTitleView;
+    private final TextView bookItemAuthorView;
 
     private BookViewHolder(View itemView) {
         super(itemView);
-        bookItemView = itemView.findViewById(R.id.bookTitleTextView);
+        bookItemTitleView = itemView.findViewById(R.id.bookTitleTextView);
+        bookItemAuthorView = itemView.findViewById(R.id.bookAuthorTextView);
 //        TODO: access to other fields
     }
 
     public void bind(Book book) {
-        bookItemView.setText(book.getTitle());
+        bookItemTitleView.setText(book.getTitle());
+        bookItemAuthorView.setText(book.getAuthor());
     }
 
     public static BookViewHolder create(ViewGroup parent) {

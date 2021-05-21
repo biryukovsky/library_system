@@ -3,7 +3,10 @@
 
     <string name="create_book_title">Добавить книгу</string>
     <string name="create_book_form_button_text">Добавить</string>
-    <string name="create_book_form_book_title">Название</string>
-    <string name="create_book_form_book_author">Автор</string>
-    <string name="create_book_form_book_year_published">Год издания</string>
+    <string name="form_book_title">Название</string>
+    <string name="form_book_author">Автор</string>
+    <string name="form_book_year_published">Год издания</string>
+
+    <string name="button_save">Сохранить</string>
+    <string name="button_load_photo">Загрузить фото</string>
 </resources>
