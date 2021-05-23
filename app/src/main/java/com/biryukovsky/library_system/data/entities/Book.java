@@ -43,8 +43,19 @@ public class Book {
         return yearPublished;
     }
 
-    public Book(String title, String author) {
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public Book(
+            String title,
+            String author,
+            @Nullable String imagePath,
+            @Nullable String yearPublished
+    ) {
         this.title = title;
         this.author = author;
+        this.imagePath = imagePath;
+        this.yearPublished = yearPublished;
     }
 }

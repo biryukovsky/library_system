@@ -45,9 +45,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == Constants.NEW_BOOK_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
+        if (requestCode == Constants.NEW_BOOK_ACTIVITY_REQUEST_CODE
+                && resultCode == RESULT_OK
+                && data != null) {
             HashMap<String, String> bookData = (HashMap<String, String>) data.getSerializableExtra(CreateBookActivity.EXTRA_BOOK_DATA);
-            Book book = new Book(bookData.get("title"), bookData.get("author"));
+            Book book = new Book(
+                    bookData.get("title"),
+                    bookData.get("author"),
+                    bookData.get("imagePath"),
+                    bookData.get("yearPublished")
+            );
             bookViewModel.insert(book);
         }
     }

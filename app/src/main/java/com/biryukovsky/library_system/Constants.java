@@ -5,4 +5,5 @@ public class Constants {
 
     public static final int NEW_BOOK_ACTIVITY_REQUEST_CODE = 1;
     public static final int EDIT_BOOK_ACTIVITY_REQUEST_CODE = 2;
+    public static final int LOAD_PHOTO_REQUEST = 1;
 }
